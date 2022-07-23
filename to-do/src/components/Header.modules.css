@@ -1,0 +1,10 @@
+header {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  background: var(--gray-700);
+}
+
+img {
+  margin: 72px auto 80px auto;
+}
