@@ -1,4 +1,4 @@
-import "./Header.modules.css";
+import "./Header.module.css";
 
 import logo from "../assets/logo.svg";
 

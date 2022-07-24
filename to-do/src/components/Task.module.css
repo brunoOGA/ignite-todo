@@ -7,6 +7,9 @@
   border-radius: 8px;
   background: var(--gray-500)
 }
+.container + .container {
+  margin-top: 12px;
+}
 
 .container button {
   background: transparent;

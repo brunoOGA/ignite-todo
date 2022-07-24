@@ -1,12 +1,63 @@
 main {
-  max-width: 956px;
+  position: relative;
+  padding: 0 16px;
+  max-width: 865px;
   margin: 0 auto;
+  top: -1.7rem;
 }
 
-button {
+form + section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+form + section span {
+  color: var(--purple);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+form + section span > span {
+  border-radius: 999px;
+  padding: 2px 8px;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  margin-left: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.createForm {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+}
+
+.createForm input {
+  flex: 1;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: var(--gray-500);
+  border-width: 1px;
+  border: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--gray-100);
+}
+
+.createForm input::placeholder {
+  color: var(--gray-300);
+}
+
+.createForm button {
   display: flex;
   align-items: center;
   justify-items: center;
+
+  cursor: pointer;
+
   color: var(--gray-100);
   background: var(--blue-dark);
   font-size: 0.875rem;
@@ -15,10 +66,27 @@ button {
   padding: 1rem;
   border-radius: 8px;
   border: 0;
+  margin-left: 8px;
 }
 
-button .iconButton {
+.createForm button span {
+  margin-left: auto;
+  margin-right: 4px;
+}
+
+.createForm button .iconButton {
   color: var(--gray-100);
   width: 0.875rem;
   height: 0.875rem;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 400px) {
+  .createForm {
+    flex-direction: column;
+  }
+
+  .createForm button {
+    margin: 12px 0 0 0;
+  }
 }
